@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Index.Master.cs"%>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Lost Saga World </title>
+    <link rel="shortcut icon" href="images\lostbg.jpg"/
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+      <script type="text/javascript">
+        function AlertBox(msgtitle, message, controlToFocus) {
+            $("#msgDialogAlert").dialog({
+                autoOpen: false,
+                modal: true,
+                title: msgtitle,
+                closeOnEscape: true,
+                buttons: [{
+                    text: "Ok",
+                    click: function () {
+                        $(this).dialog("close");
+                        if (controlToFocus != null)
+                            controlToFocus.focus();
+                    }
+                }],
+                close: function () {
+                    $("#operationMsgAlert").html("");
+                    if (controlToFocus != null)
+                        controlToFocus.focus();
+                },
+                show: { effect: "clip", duration: 200 }
+            });
+            $("#operationMsgAlert").html(message);
+            $("#msgDialogAlert").dialog("open");
+        };
+
+        function ShowMessage() {
+            AlertBox("This is Title", "And This is the content of the message!", null);
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

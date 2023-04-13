@@ -1,0 +1,1 @@
+<img src="https://ifh.cc/g/AsZ4ke.jpg" alt="LS" class="fox">

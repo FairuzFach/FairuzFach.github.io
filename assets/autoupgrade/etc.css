@@ -1,0 +1,683 @@
+﻿@charset "utf-8";
+
+@import url("common.css");
+@import url("layout.css");
+
+
+/*점검*/
+body.miniLogin #wrap,
+body.inspect #wrap,
+body.error #wrap,
+body.edge #wrap,
+body.playing #wrap,
+body.launcher #wrap {
+	position: absolute;
+	min-height: 1140px;
+	background: #000 url(http://lostsagakr-cdn-image.valofe.com/2014_grand/class/bg/bg_wrap.jpg) no-repeat center top;
+}
+body.miniLogin #wrap {min-height: 1070px;}
+
+.miniLogin #header,
+.error #header,
+.edge #header,
+.inspect #header,
+.playing #header,
+.launcher #header {background: none;}
+
+.inspect #header .header,
+.error #header .header {height: 289px;}
+.edge #header .header {height: 289px;}
+
+.miniLogin #header .header {height: 325px;}
+.playing #header .header, .launcher #header .header {height: 337px;}
+
+.miniLogin #header h1,
+.inspect #header h1,
+.error #header h1,
+.edge #header h1 {
+	position: absolute;
+	top: 55px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+.miniLogin #header h1, .miniLogin #header p,
+.playing #header h1, .playing #header p,
+.launcher #header h1, .launcher #header p {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+.miniLogin #header h1 {top: 37px;}
+.miniLogin #header p {top: 185px;}
+
+.playing #header h1, .launcher #header h1 {top: 37px;}
+.playing #header p, .launcher #header p {top: 192px;}
+
+ #footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+.inspect #container {
+	position: relative;
+	width: 845px;
+	height: 534px;
+	background: url(../images/etc/bg_container.png) no-repeat center top;
+}
+.error #container {
+	position: relative;
+	width: 845px;
+	height: 601px;
+	background: url(../images/etc/bg_container2.png) no-repeat center top;
+}
+.inspect .bg,
+.error .bg {
+	position: absolute;
+	top: 31px;
+	left: 39px;
+	width: 767px;
+	height: 444px;
+}
+.error .bg {background: url(../images/etc/bg_error.gif) no-repeat center 143px;}
+/*.inspect .bg {background: url(../images/etc/bg_inspect.jpg) no-repeat right bottom;}*/
+.inspect h2,
+.inspect .txt {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+}
+.inspect h2 {top: 83px;}
+.inspect .txt {top: 142px;}
+.inspect dl {
+	position: absolute;
+	top: 210px;
+	left: 80px;
+	z-index: 1;
+}
+.inspect dt {
+	float: left;
+	*position: absolute;
+	*left: 0;
+}
+.inspect dd {
+	padding-left: 100px;
+	width: 590px;
+	display: block;
+	padding-bottom: 30px;
+	line-height: 1.9;
+}
+.inspect dd strong {
+	line-height: 1.9;
+	color: #c61d23;
+}
+.inspect dd.time {margin-top: -2px;}
+.inspect dd.time strong {
+	font-size: 15px;
+	letter-spacing: -1px;
+}
+
+/*엣지*/
+.edge #container {
+	overflow: hidden;
+	position: relative;
+	width: 829px;
+	height: 573px;
+	background: #f5f5f5 url(../images/etc/bg_etc.gif) repeat left top;
+	box-shadow: 0px 10px 15px #000;
+}
+.edge #container .box {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	right: 30px;
+	bottom: 97px;
+	border: 1px solid #c7c7c7;
+	background: #fbfbfb url(../images/etc/bg_error.gif) no-repeat center 163px;
+}
+.edge h2 {
+	position: absolute;
+	width: 767px;
+	top: 41px;
+	left: 0px;
+	text-align: center;
+	z-index: 1;
+}
+.edge .installInfo {
+	position: absolute;
+	width: 687px;
+	top: 330px;
+	left: 40px;
+}
+.edge .installInfo .btnInstall {
+	display: inline-block;
+	padding-top: 9px;
+	height: 19px;
+}
+.edge .installInfo .btnInstall:hover {text-decoration: none;}
+.edge .directLogin {
+	position: absolute;
+	width: 100%;
+	top: 398px;
+}
+.edge .btnArea {
+	position: absolute;
+	left: 0;
+	top: 505px;
+	width: 100%;
+}
+
+/*에러*/
+.error #container {text-align: center;}
+.error h2,
+.error .txtArea,
+.error .directLogin,
+.error .btnArea {
+	position: absolute;
+	width: 767px;
+	left: 39px;
+	text-align: center;
+	z-index: 1;
+}
+.error h2 {top: 72px;}
+.error .txtArea {top: 310px;}
+.error .txtArea,
+.error .txtArea strong,
+.error .txtArea .tit {
+	line-height: 1.4;
+	color: #414141;
+}
+.error .txtArea strong {color: #d03038;}
+.error .txtArea .tit {
+	font-size: 15px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+.directLogin {
+	text-align: center;
+}
+.btnDirectGo {
+	width: 89px;
+	height: 28px;
+	background: url(../images/etc/btn_direct_go.png) no-repeat left top;
+}
+.error .directLogin {top: 404px;}
+.directLogin img {
+	margin-top: 7px;
+	padding-right: 5px;
+}
+
+.btnArea {top: 503px;}
+.btnArea .btnGoPrve,
+.btnArea .btnInquiry {
+	width: 149px;
+	height: 38px;
+}
+.btnArea .btnGoPrve {background: url(../images/etc/btn_go_prve.png) no-repeat left top;}
+.btnArea .btnInquiry {background: url(../images/etc/btn_inquiry.png) no-repeat left top;}
+
+
+.launcher .directLogin {
+	margin-top: 20px;
+	/*text-align: center;*/
+}
+
+
+
+/*miniLogin*/
+.miniLogin #container {
+	overflow: hidden;
+	position: relative;
+	width: 889px;
+	height: 496px;
+	background: #f5f5f5;
+	/*background: url(../images/etc/bg_container.png) no-repeat center top;*/
+}
+.miniLogin h2 {
+	margin: 30px 30px 0px 30px;
+	/*background: #000;*/
+	/*height: 54px;*/
+}
+.miniLogin .box {
+	position: relative;
+	/*padding: 30px;*/
+	height: 381px;
+	margin: 0px 30px 30px 30px;
+	background: #fff;
+	border: 1px solid #c7c7c7;
+	border-width: 0px 1px 1px 1px;
+}
+.miniLogin #login {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	width: 352px;
+	height: 161px;
+	border-top: 2px solid #a1a1a1;
+	/*background: #ccc;*/
+}
+.miniLogin #gameStart {
+	overflow: hidden;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 383px;
+	border-left: 1px solid #e1e1e1;
+	text-align: right;
+}
+.miniLogin #gameStart span.pcOn {
+	position: absolute;
+	top: 0;
+	left: 30px;
+	text-indent: -9999px !important;
+	width: 74px;
+	height: 74px;
+	background: url(../images/main/bg_pcbang_on.png) no-repeat center top;
+}
+.miniLogin #gameStart .btnGameStart {
+	width: 353px;
+	height: 161px;
+	background: url(../images/login/btn_gameStart.png) no-repeat center top;
+}
+.miniLogin .bnrArea {
+	width: 767px;
+	position: absolute;
+	bottom: 0px;
+	left: 30px;
+}
+.miniLogin .bnrArea h3 {
+	border-top: 4px solid #cc3439;
+	padding: 15px 0;
+}
+.miniLogin .bnrArea li:first-child a {margin-left: 0;}
+.miniLogin .bnrArea li a {
+	width: 183px;
+	height: 69px;
+	float: left;
+	margin-left: 9px;
+	border: 1px solid #b3b3b3;
+}
+.miniLogin .bnrArea li a img {
+	width: 183px;
+	height: 69px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*playing, launcher*/
+.playing #container, .launcher #container {
+	overflow: hidden;
+	position: relative;
+	width: 829px;
+	background: #f5f5f5;
+}
+.playing #container {height: 545px;}
+.launcher #container {height: 542px;}
+/*tab*/
+.playing .tab, .launcher .tab {
+	width: 100%;
+	height: 55px;
+}
+.playing .tab {background: url(../images/etc/bg_tab_playing.png) no-repeat left top;}
+.launcher .tab {background: url(../images/etc/bg_tab_launcher.png) no-repeat left top;}
+.playing .tab li, .launcher .tab li {
+	float: left;
+	padding-top: 18px;
+	width: 50%;
+	*width: 49%;
+	height: 37px;
+	text-align: center;
+}
+/*box*/
+.playing .box, .launcher .box {
+	position: absolute;
+	top: 85px;
+	left: 30px;
+	right: 30px;
+	border: 1px solid #c7c7c7;
+	background: #fbfbfb;
+}
+.playing .box {bottom: 97px;}
+.launcher .box {bottom: 80px;}
+
+/*playing*/
+.playing .faqArea {
+	position: absolute;
+	top: 37px;
+	left: 40px;
+	width: 345px;
+	height: 189px;
+	border-right: 1px solid #e1e1e1;
+}
+.playing .faqArea h3 {
+	width: 304px;
+	height: 25px;
+	border-bottom: 1px solid #797979;
+}
+.playing .faqArea ul {
+	margin-top: 8px;
+	width: 304px;
+}
+.playing .faqArea li {
+	padding: 7px 0 8px 0;
+	border-bottom: 1px solid #c9c9c9;
+}
+.playing .faqArea li a {
+	color: #4c4c4c;
+	display: inline-block;
+	max-width: 304px;
+	line-height: 1.3;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.playing .faqArea .more {
+	position: absolute;
+	top: 3px;
+	right: 40px;
+	width: 8px;
+	height: 8px;
+	text-indent: -9999px;
+	background: url(../images/main/icon_more.gif) no-repeat left top;
+}
+.playing .bnrArea {
+	position: absolute;
+	top: 37px;
+	right: 40px;
+}
+/*.playing .bnrArea a {
+	display: inline-block;
+	width: 300px;
+	height: 187px;
+	border: 1px solid #afafaf;
+}*/
+.playing .bnrArea img {
+	width: 302px;
+	height: 189px;
+}
+.playing .btnArea {
+	position: absolute;
+	left: 0;
+	top: 475px;
+	width: 100%;
+}
+.playing .btnGameRe, .playing .btnGoHome, .launcher .btnGoHome {
+	width: 149px;
+	height: 38px;
+}
+.playing .btnGameRe {background: url(../images/etc/btn_game_replay.png) no-repeat center top;}
+.playing .btnGoHome {background: url(../images/etc/btn_gohome_glay.png) no-repeat center top;}
+.launcher .btnGoHome {background: url(../images/etc/btn_gohome_red.png) no-repeat center top;}
+
+/*launcher*/
+.launcher .box p {
+	padding: 40px 0 20px;
+	text-align: center;
+}
+.launcher .box h3 {
+	margin: 0 38px;
+	padding: 12px 0 8px 0;
+	text-align: center;
+	background: #373737;
+}
+.launcher .box ul {
+	margin: 0 38px;
+	padding: 10px 0 10px 24px;
+	/*border: 1px solid #a9a9a9;*/
+	/*border-width: 0 1px 1px 1px;*/
+	background: #e8e8e8;
+}
+.launcher .box li {
+	padding: 6px 0;
+	font-weight: bold;
+	color: #4c4c4c;
+}
+.launcher .installInfo {margin: 20px 38px 0 38px;}
+.installInfo {
+	padding: 10px 0;
+	background: #e7e7e7;
+	text-align: center;
+}
+.installInfo img {margin: 5px 5px 0 0;}
+.btnInstall {
+	width: 89px;
+	height: 28px;
+	font-weight: bold;
+	font-size: 11px;
+	color: #515150;
+	background: url(../images/etc/btn_install.png) no-repeat center top;
+}
+.launcher .btnArea {
+	position: absolute;
+	top: 481px;
+	/*padding-top: 368px;*/
+	width: 100%;
+	/*height: 38px;*/
+}
+
+
+.playing .installInfo {
+	position: absolute;
+	width: 687px;
+	top: 246px;
+	left: 40px;
+	/*margin: 0 40px;*/
+}
+.playing .directLogin {
+	position: absolute;
+	width: 100%;
+	top: 314px;
+}
+
+
+
+
+/*게임실행창*/
+#autoupgrade {
+	overflow: hidden;
+	width: 460px;
+}
+
+#autoupgrade .bnrArea {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 17px;
+	width: 460px;
+	height: 129px;
+}
+#autoupgrade .bnrArea img {
+	width: 460px;
+	height: 129px;
+}
+#autoupgrade .bnrArea .bx-controls {
+	position: absolute;
+	z-index: 10;
+	bottom: 13px;
+	right: 15px;
+}
+#autoupgrade .bnrArea .bx-controls .bx-pager-item {float: left;}
+
+#autoupgrade .bnrArea a.bx-pager-link {
+	display: block;
+	margin: 0 2px;
+	width: 11px;
+	height: 11px;
+	text-indent: -9999px;
+	background: url(../images/common/icon_sideBnr_nom.png) no-repeat left top;
+}
+#autoupgrade .bnrArea a.active {
+	background: url(../images/common/icon_sideBnr_sct.png) no-repeat left top;
+}
+
+#autoupgrade .mainNotice, #autoupgrade .plazaTalk {
+	border: 1px solid #c4c4c4;
+	height: 135px;
+}
+
+
+#autoupgrade .mainNotice {
+	position: relative;
+	/* overflow: hidden; */
+	width: 450px;
+	display: inline-block;
+	margin-left: 5px;
+	/* margin-right: 5px; */
+}
+
+.mainNotice h2 {
+	/*float: left;*/
+	z-index: 1;
+}
+.mainNotice h2 a {
+	position: absolute;
+	top: -1px;
+	text-indent: -9999px;
+	width: 144px;
+	display: block;
+	height: 16px;
+	padding-top: 10px;
+	border: 1px solid #c4c4c4;
+	border-width: 1px;
+	text-align: center;
+	text-decoration: none;
+	color: #666;
+	letter-spacing: -1px;
+}
+.mainNotice h2 a.current {
+	color: #c51d23;
+	width: 449px;
+	font-weight: bold;
+	border: 1px solid #c51d23;
+}
+.mainNotice .tabCon01 h2 a {
+    left: -1px;
+    background: #f4f4f4 url(../../images/autoupgrade/anuncios.gif) no-repeat center 7px;
+}
+    .mainNotice .tabCon01 h2 a.current {
+        background: #c51d23 url(../../images/autoupgrade/anuncios.gif) no-repeat center 7px;
+    }
+
+
+.mainNotice ul {
+	position: absolute;
+	top: 40px;
+	left: 10px;
+}
+.mainNotice ul li {
+	padding: 3px 0;
+}
+.mainNotice ul li a, .mainNotice ul li a strong {
+	color: #5c5c5c !important;
+	line-height: 1.3;
+}
+.mainNotice ul li a:hover, .mainNotice ul li a:hover strong {
+	color: #c51d23 !important;
+	text-decoration: none;
+}
+.mainNotice ul li a {
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 445px;
+	padding-left: 5px;
+	background: url(../images/main/icon_dot_notice.gif) no-repeat left 5px;
+}
+.mainNotice ul li a:hover {background: url(../images/main/icon_dot_notice_on.gif) no-repeat left 5px;}
+
+
+
+
+
+
+#autoupgrade .plazaTalk {
+	float: right;
+	width: 161px;
+	text-align: center;
+}
+#autoupgrade .plazaTalk h2 {
+	background: #f0f0f0 url(../images/etc/tit_plazaTalk.gif) no-repeat center 7px;
+	padding: 10px 0 0 20px;
+	height: 16px;
+	border-bottom: 1px solid #c4c4c4;
+	text-indent: -9999px;
+	/*background: #f0f0f0;*/
+}
+#autoupgrade .plazaTalk a {text-decoration: none;}
+#autoupgrade .plazaTalk a img {
+	padding-top: 13px;
+	width: 89px;
+	height: 54px;
+}
+#autoupgrade .plazaTalk a strong {
+	text-align: center;
+	padding: 5px 0 3px 9px;
+	width: 150px;
+	display: block;
+	color: #5c5c5c !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#autoupgrade .plazaTalk a span {
+	display: block;
+	color: #5c5c5c;
+	font-size: 11px;
+}
+
+
+
+
+
+
+.loadingPop {}
+.loadingPop .loading {
+	z-index: 9999;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -74px;
+	margin-left: -150px;
+	box-shadow: 0px 0px 20px #111111;
+	width: 300px;
+	height: 148px;
+	background: #f0f0f0 url(../images/etc/bg_loading_popup.png) no-repeat left top;
+} 
+.loadingPop .loading .bar {
+	position: absolute;
+	top: 82px;
+	left: 18px;
+}
+.loadingPop .loading p {text-indent: -9999px;}
+.loadingPop #bgDark {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	min-width: 0;
+	background-color: #000;
+	z-index: 9990;
+	/* Good browsers */
+	opacity: 0.8;
+	/* IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	/* IE 5-7 */
+	filter: alpha(opacity=80);
+	/* Netscape */
+	-moz-opacity: 0.8;
+	/* Safari 1.x */
+	-khtml-opacity: 0.8;
+}

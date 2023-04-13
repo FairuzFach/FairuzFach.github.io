@@ -1,0 +1,639 @@
+﻿@charset "utf-8";
+
+
+#skiptoContent {
+	position:absolute;
+	z-index:10000;
+	width:100%;
+	text-align:center;
+}
+#skiptoContent a {
+	display:block;
+	overflow:hidden;
+	width:1px;
+	height:1px;
+	margin-bottom:-1px;
+	text-align:center;
+	color:#000;
+	font-weight: bold;
+	white-space:nowrap;
+}
+#skiptoContent a:focus,
+#skiptoContent a:active {
+	width:auto;
+	height:auto;
+	padding:15px;
+	background:#fff;
+	text-decoration: underline;
+}
+#wrap {
+	width: 100%;
+	min-width: 985px;
+	/*min-width: 1225px;*/
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(http://lostsagakr-cdn-image.valofe.com/2014_grand/class/bg/body_bg.jpg) no-repeat center top;
+}
+#header {background: url(../images/common/header_bg.png) repeat-x left top;}
+#header .header {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 985px;
+	height: 142px;
+}
+#header h1 {
+	position: absolute;
+	top: 23px;
+	left: 35px;
+}
+.channeling .mgameGnbBg {
+	width: 100%;
+}
+/* topLink */
+#topLink {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-width: 985px;
+	background: url(../images/common/topLink_bg.png) repeat-x left top;
+}
+#topLink .tlWrap {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 985px;
+	height: 42px;
+}
+.tlWrap .wi {
+	display: inline-block;
+	margin-top: 10px;
+	padding-right: 17px;
+	background: url(../images/common/header_youth_bg.gif) no-repeat right 2px;
+}
+.tlWrap .youth {
+	display: inline-block;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+.tlWrap .pcbang {
+	position: absolute;
+	top: 9px;
+	right: 0;
+	width: 271px;
+	height: 24px;
+	background: url(../images/common/header_pcbang_bg.png) no-repeat left top;
+}
+.tlWrap .pcbang a, .tlWrap .pcbang a strong {font-size: 11px;}
+.tlWrap .pcbang a {
+	float: left;
+	padding-top: 7px;
+	padding-right: 5px;
+	height: 17px;
+	text-align: center;
+	font-weight: bold;
+	color: #6c6c6c;
+	text-decoration: none;
+}
+.tlWrap .pcbang .pcFind {
+	width: 141px;
+	background: url(../images/common/header_pcbang_arr.gif) no-repeat 135px 10px;
+}
+.tlWrap .pcbang .pcBenefit {
+	width: 119px;
+	border-left: 1px solid #c9c9c9;
+	background: url(../images/common/header_pcbang_arr.gif) no-repeat 106px 10px;
+}
+
+
+
+/* gnb */
+#gnb {
+	position: absolute;
+	left: 258px;
+	top: 61px;
+	height: 75px;
+}
+#header h2 {display: none;}
+#gnb li {
+	margin-left: 1px;
+	float: left;
+	/*text-align: center;*/
+	background: url(../images/common/gnb_1dep_bar.png) no-repeat left 6px;
+}
+#gnb li.menu1 {
+	width: 73px;
+	/*text-align: left;*/
+	background: none;
+}
+#gnb li.menu2 {width: 106px;}
+#gnb li.menu7 {width: 122px;}
+#gnb li.menu3 {width: 105px;}
+#gnb li.menu4 {width: 113px;}
+#gnb li.menu5 {width: 76px;}
+#gnb li.menu6 {width: 107px;}
+
+
+#gnb li a {
+	display: block;
+	width: 100%;
+	height: 39px;
+}
+#gnb li a span {
+	cursor: hand;
+	display: block;
+	text-indent: -9999px;
+	height: 39px;
+	background: url(../images/common/gnb_1dep_20150923.png) no-repeat left top;
+}
+#gnb li.menu1 a span {
+	width: 73px;
+	background-position: 0 0;
+}
+#gnb li.menu2 a span {
+	width: 106px;
+	background-position: -74px 0;
+}
+#gnb li.menu7 a span {
+	width: 122px;
+	background-position: -181px 0;
+}
+#gnb li.menu3 a span {
+	width: 105px; 
+	background-position: -304px 0;
+}
+#gnb li.menu4 a span {
+	width: 113px;
+	background-position: -410px 0;
+}
+#gnb li.menu5 a span {
+	width: 76px;
+	background-position: -524px 0;
+}
+#gnb li.menu6 a span {
+	width: 107px;
+	background-position: -601px 0;
+}
+#gnb li.menu1.off a span {background-position: 0 -39px;}
+#gnb li.menu2.off a span {background-position: -74px -39px;}
+#gnb li.menu7.off a span {background-position: -181px -39px;}
+#gnb li.menu3.off a span {background-position: -304px -39px;}
+#gnb li.menu4.off a span {background-position: -410px -39px;}
+#gnb li.menu5.off a span {background-position: -524px -39px;}
+#gnb li.menu6.off a span {background-position: -601px -39px;}
+
+
+
+#gnb li ul {
+	position: absolute;
+	top: 50px;
+	display: none;
+}
+#gnb li.on ul {display: block;}
+#gnb li.menu1 ul {left: 4px;}
+#gnb li.menu2 ul {left: 0px;}
+#gnb li.menu3 ul {left: 140px;}
+#gnb li.menu4 ul {left: 409px;}
+#gnb li.menu5 ul {left: 347px;}
+#gnb li.menu6 ul {left: 405px;}
+#gnb li.menu7 ul {left: 157px;}
+#gnb li ul li {
+	float: left;
+	background: none;
+	margin-right: 18px;
+}
+#gnb li ul li a {
+	display: block;
+	width: 100%;
+	height: 16px;
+}
+#gnb li ul li a span {
+	cursor: hand;
+	display: block;
+	text-indent: -9999px;
+	height: 16px;
+	background: url(../images/common/gnb_2dep_20190619.png) no-repeat;
+}
+/*menu1*/
+#gnb li.menu1 li.m1 span {
+	width: 45px;
+	background-position: 0 0;
+}
+#gnb li.menu1 li.m2 span {
+	width: 34px;
+	background-position: -62px 0;
+}
+#gnb li.menu1 li.m3 span {
+	width: 45px;
+	background-position: -114px 0 ;
+}
+#gnb li.menu1 li.m4 span {
+	width: 45px;
+	background-position: -172px 0 ;
+}
+#gnb li.menu1 li.m1.on span, #gnb li.menu1 li.m1 a:focus span, #gnb li.menu1 li.m1 a:hover span {background-position: 0 -16px;}
+#gnb li.menu1 li.m2.on span, #gnb li.menu1 li.m2 a:focus span, #gnb li.menu1 li.m2 a:hover span {background-position: -62px -16px;}
+#gnb li.menu1 li.m3.on span, #gnb li.menu1 li.m3 a:focus span, #gnb li.menu1 li.m3 a:hover span {background-position: -114px -16px;}
+#gnb li.menu1 li.m4.on span, #gnb li.menu1 li.m4 a:focus span, #gnb li.menu1 li.m4 a:hover span {background-position: -172px -16px;}
+/*menu2*/
+#gnb li.menu2 li.m1 span {
+	width: 44px;
+	background-position: 0 -32px;
+}
+#gnb li.menu2 li.m2 span {
+	width: 58px;
+	background-position: -62px -32px;
+}
+#gnb li.menu2 li.m3 span {
+	width: 24px;
+	background-position: -138px -32px;
+}
+#gnb li.menu2 li.m4 span {
+	width: 58px;
+	background-position: -176px -32px;
+}
+#gnb li.menu2 li.m5 span {
+	width: 40px;
+	background-position: -252px -32px;
+}
+#gnb li.menu2 li.m6 span {
+	width: 34px;
+	background-position: -307px -32px;
+}
+#gnb li.menu2 li.m1.on span, #gnb li.menu2 li.m1 a:focus span, #gnb li.menu2 li.m1 a:hover span {background-position: 0 -48px;}
+#gnb li.menu2 li.m2.on span, #gnb li.menu2 li.m2 a:focus span, #gnb li.menu2 li.m2 a:hover span {background-position: -62px -48px;}
+#gnb li.menu2 li.m3.on span, #gnb li.menu2 li.m3 a:focus span, #gnb li.menu2 li.m3 a:hover span {background-position: -138px -48px;}
+#gnb li.menu2 li.m4.on span, #gnb li.menu2 li.m4 a:focus span, #gnb li.menu2 li.m4 a:hover span {background-position: -176px -48px;}
+#gnb li.menu2 li.m5.on span, #gnb li.menu2 li.m5 a:focus span, #gnb li.menu2 li.m5 a:hover span {background-position: -252px -48px;}
+#gnb li.menu2 li.m6.on span, #gnb li.menu2 li.m6 a:focus span, #gnb li.menu2 li.m6 a:hover span {background-position: -307px -48px;}
+/*menu3*/
+#gnb li.menu3 li.m1 span {
+	width: 58px;
+	background-position: 0 -64px;
+}
+#gnb li.menu3 li.m2 span {
+	width: 69px;
+	background-position: -75px -64px;
+}
+#gnb li.menu3 li.m3 span {
+	width: 45px;
+	background-position: -161px -64px;
+}
+#gnb li.menu3 li.m4 span {
+	width: 45px;
+	background-position: -224px -64px;
+}
+#gnb li.menu3 li.m5 span {
+	width: 58px;
+	background-position: -286px -64px;
+}
+#gnb li.menu3 li.m6 span {
+	width: 58px;
+	background-position: -359px -64px;
+}
+#gnb li.menu3 li.m1.on span, #gnb li.menu3 li.m1 a:focus span, #gnb li.menu3 li.m1 a:hover span {background-position: 0 -80px;}
+#gnb li.menu3 li.m2.on span, #gnb li.menu3 li.m2 a:focus span, #gnb li.menu3 li.m2 a:hover span {background-position: -75px -80px;}
+#gnb li.menu3 li.m3.on span, #gnb li.menu3 li.m3 a:focus span, #gnb li.menu3 li.m3 a:hover span {background-position: -161px -80px;}
+#gnb li.menu3 li.m4.on span, #gnb li.menu3 li.m4 a:focus span, #gnb li.menu3 li.m4 a:hover span {background-position: -224px -80px;}
+#gnb li.menu3 li.m5.on span, #gnb li.menu3 li.m5 a:focus span, #gnb li.menu3 li.m5 a:hover span {background-position: -286px -80px;}
+#gnb li.menu3 li.m6.on span, #gnb li.menu3 li.m6 a:focus span, #gnb li.menu3 li.m6 a:hover span {background-position: -359px -80px;}
+/*menu4*/
+#gnb li.menu4 li.m1 span {
+	width: 48px;
+	background-position: 0 -96px;
+}
+#gnb li.menu4 li.m2 span {
+	width: 48px;
+	background-position: -64px -96px;
+}
+#gnb li.menu4 li.m3 span {
+	width: 58px;
+	background-position: -129px -96px;
+}
+#gnb li.menu4 li.m1.on span, #gnb li.menu4 li.m1 a:focus span, #gnb li.menu4 li.m1 a:hover span {background-position: 0 -112px;}
+#gnb li.menu4 li.m2.on span, #gnb li.menu4 li.m2 a:focus span, #gnb li.menu4 li.m2 a:hover span {background-position: -64px -112px;}
+#gnb li.menu4 li.m3.on span, #gnb li.menu4 li.m3 a:focus span, #gnb li.menu4 li.m3 a:hover span {background-position: -129px -112px;}
+/*menu5*/
+#gnb li.menu5 li.m1 span {
+	width: 48px;
+	background-position: 0 -128px;
+}
+#gnb li.menu5 li.m2 span {
+	width: 48px;
+	background-position: -64px -128px;
+}
+#gnb li.menu5 li.m3 span {
+	width: 72px;
+	background-position: -131px -128px;
+}
+#gnb li.menu5 li.m4 span {
+	width: 48px;
+	background-position: -222px -128px;
+}
+#gnb li.menu5 li.m5 span {
+	width: 48px;
+	background-position: -288px -128px;
+}
+#gnb li.menu5 li.m1.on span, #gnb li.menu5 li.m1 a:focus span, #gnb li.menu5 li.m1 a:hover span {background-position: 0 -144px;}
+#gnb li.menu5 li.m2.on span, #gnb li.menu5 li.m2 a:focus span, #gnb li.menu5 li.m2 a:hover span {background-position: -64px -144px;}
+#gnb li.menu5 li.m3.on span, #gnb li.menu5 li.m3 a:focus span, #gnb li.menu5 li.m3 a:hover span {background-position: -131px -144px;}
+#gnb li.menu5 li.m4.on span, #gnb li.menu5 li.m4 a:focus span, #gnb li.menu5 li.m4 a:hover span {background-position: -222px -144px;}
+#gnb li.menu5 li.m5.on span, #gnb li.menu5 li.m5 a:focus span, #gnb li.menu5 li.m5 a:hover span {background-position: -288px -144px;}
+/*menu6*/
+#gnb li.menu6 li.m1 span {
+	width: 26px;
+	background-position: 0 -160px;
+}
+#gnb li.menu6 li.m2 span {
+	width: 49px;
+	background-position: -44px -160px;
+}
+#gnb li.menu6 li.m3 span {
+	width: 44px;
+	background-position: -112px -160px;
+}
+#gnb li.menu6 li.m4 span {
+	width: 44px;
+	background-position: -174px -160px;
+}
+#gnb li.menu6 li.m5 span {
+	width: 43px;
+	background-position: -237px -160px;
+}
+#gnb li.menu6 li.m1.on span, #gnb li.menu6 li.m1 a:focus span, #gnb li.menu6 li.m1 a:hover span {background-position: 0 -176px;}
+#gnb li.menu6 li.m2.on span, #gnb li.menu6 li.m2 a:focus span, #gnb li.menu6 li.m2 a:hover span {background-position: -44px -176px;}
+#gnb li.menu6 li.m3.on span, #gnb li.menu6 li.m3 a:focus span, #gnb li.menu6 li.m3 a:hover span {background-position: -112px -176px;}
+#gnb li.menu6 li.m4.on span, #gnb li.menu6 li.m4 a:focus span, #gnb li.menu6 li.m4 a:hover span {background-position: -174px -176px;}
+#gnb li.menu6 li.m5.on span, #gnb li.menu6 li.m5 a:focus span, #gnb li.menu6 li.m5 a:hover span {background-position: -237px -176px;}
+/*menu7*/
+#gnb li.menu7 li.m1 span {
+	width: 44px;
+	background-position: 0 -192px;
+}
+#gnb li.menu7 li.m2 span {
+	width: 45px;
+	background-position: -62px -192px;
+}
+#gnb li.menu7 li.m3 span {
+	width: 33px;
+	background-position: -125px -192px;
+}
+#gnb li.menu7 li.m4 span {
+	width: 66px;
+	background-position: -177px -192px;
+}
+#gnb li.menu7 li.m5 span {
+	width: 66px;
+	background-position: -260px -192px;
+}
+
+#gnb li.menu7 li.m1.on span, #gnb li.menu7 li.m1 a:focus span, #gnb li.menu7 li.m1 a:hover span {background-position: 0 -208px;}
+#gnb li.menu7 li.m2.on span, #gnb li.menu7 li.m2 a:focus span, #gnb li.menu7 li.m2 a:hover span {background-position: -62px -208px;}
+#gnb li.menu7 li.m3.on span, #gnb li.menu7 li.m3 a:focus span, #gnb li.menu7 li.m3 a:hover span {background-position: -125px -208px;}
+#gnb li.menu7 li.m4.on span, #gnb li.menu7 li.m4 a:focus span, #gnb li.menu7 li.m4 a:hover span {background-position: -177px -208px;}
+#gnb li.menu7 li.m5.on span, #gnb li.menu7 li.m5 a:focus span, #gnb li.menu7 li.m5 a:hover span {background-position: -260px -208px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*container*/
+#container {
+	position: relative;
+	margin: 0 auto;
+	width: 985px;
+}
+
+
+
+
+/* footer */
+#footer {
+	clear: both;
+	overflow: hidden;
+	background: #2a2a2a;
+	height: 150px;
+}
+.footer {
+	position: relative;
+	margin: 0 auto;
+	width: 985px;
+}
+#footer #footerlogo .wi,
+#footer #links,
+#footer address,
+#footer address .license,
+#footer address .email,
+#footer p,
+#footer .ratingInfo {position: absolute;}
+
+
+#footer #footerlogo .wi {
+	top: 40px;
+	left: 20px;
+}
+#footer #links {
+	top: 29px;
+	left: 146px;
+}
+#footer #links li {
+	float: left;
+	padding: 0 17px;
+	background: url(../images/common/footer_menu_bg.gif) no-repeat left 3px;
+}
+#footer #links li.first {
+	padding-left: 0px !important;
+	background: none !important;
+}
+#footer address {
+	top: 57px;
+	left: 146px;
+}
+#footer address .license {
+	top: 0;
+	right: 26px;
+}
+#footer address .email {
+	top: 12px;
+	right: 3px;
+}
+#footer p {
+	top: 103px;
+	left: 146px;
+}
+#footer .ratingInfo {
+	top: 36px;
+	right: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------채널링------------------------------------------*/
+
+
+/* tooni */
+#footer.tooni {height: 150px;}
+#footer.tooni #footerlogo .tooni {
+	position: absolute;
+	top: 19px;
+	left: 20px;
+}
+#footer.tooni #footerlogo .wi {
+	top: 97px;
+	left: 23px;
+}
+#footer.tooni #links li {padding: 0 10px;}
+#footer.tooni p {top: 102px;}
+
+
+
+/* daum */
+#footer.daum {height: 190px;}
+#footer.daum #footerlogo .daum {
+	position: absolute;
+	top: 117px;
+	left: 27px;
+}
+#footer.daum #footerlogo .wi {
+	top: 11px;
+	left: 23px;
+}
+#footer.daum #links li {padding: 0 10px;}
+#footer.daum p {top: 92px;}
+#footer.daum p.daumComt {top: 118px;}
+#footer.daum p.daumCopy {top: 135px;}
+
+
+
+/* naver */
+#footer.naver {height: 170px;}
+#footer.naver #footerlogo .naver {
+	position: absolute;
+	top: 114px;
+	left: 25px;
+}
+#footer.naver #footerlogo .wi {
+	top: 11px;
+	left: 25px;
+}
+#footer.naver p {top: 92px;}
+#footer.naver p.naverComt {top: 117px;}
+
+
+
+/* mgame */
+#footer.mgame #footerlogo .mgame {
+	position: absolute;
+	top: 23px;
+	left: 20px;
+}
+#footer.mgame #footerlogo .wi {
+	top: 86px;
+	left: 20px;
+}
+#footer.mgame #links li {padding: 0 10px;}
+#footer.mgame p {top: 104px;}
+
+
+
+
+/* nexon */
+#footer.nexon {
+	padding-bottom:50px; /* 2017-10-27 : 박경란 추가 : 넥슨 요청 */
+	height: 170px;
+}
+#footer.nexon #footerlogo .nexon {
+	position: absolute;
+	top: 29px;
+	left: 25px;
+}
+#footer.nexon #footerlogo .wi {
+	/* 2017-10-27 : 박경란 수정 : 넥슨 요청 */
+	/*
+	top: 55px;
+	left: 20px;
+	*/
+	top: 0px;
+	left: 0px;
+	float: left;
+}
+#footer.nexon #footerlogo .nx {
+	/* 2017-10-27 : 박경란 수정 : 넥슨 요청 */
+	/*
+	top: 55px;
+	left: 20px;
+	*/
+	float: left;
+	width: 81px;
+	height: 25px;
+	margin-left: 78px; /*2019-02-25 위메이드 로고 변경 건*/
+	margin-top: 16px;
+}
+
+#footer.nexon address.nexonAdd {top: 57px;}
+#footer.nexon p.nexonCopy {top: 92px;}
+#footer.nexon address.nexonAdd .license {right: 0;}
+#footer.nexon address.nexonAdd .email {right: 39px;}
+#footer.nexon address {top: 57px;}
+#footer.nexon p {top: 92px;}
+#footer.nexon p.nexonComt {top: 117px;}
+
+#footer.nexon #footerlogo{position: absolute;left: 146px;top: 156px;width: auto;height: 46px;} /* 2017-10-27 : 박경란 추가 : 넥슨 요청 */
+
+
+
+/* hangame */
+footer.hangame {height: 170px;}
+#footer.hangame #footerlogo .wi {
+	top: 11px;
+	left: 25px;
+}
+#footer.hangame #footerlogo .hangame {
+	position: absolute;
+	top: 87px;
+	left: 25px;
+}
+
+#footer.hangame p {top: 92px;}
+#footer.hangame p.hangameComt {top: 117px;}
+
+
+/* valofe */
+#footer.valofe {height: 190px;}
+#footer.valofe #footerlogo .wi {
+	position: absolute;
+	top: 11px;
+	left: 27px;
+}
+#footer.valofe #footerlogo .valofe {
+	top: 112px;
+	left: 21px;
+}
+#footer.valofe #links li {padding: 0 10px;}
+#footer.valofe p {top: 89px;}
+#footer.valofe p.valofeComt {top: 118px;}
+#footer.valofe p.valofeCopy {top: 135px;}
